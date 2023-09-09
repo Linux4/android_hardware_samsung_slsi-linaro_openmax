@@ -11,14 +11,14 @@ LOCAL_SRC_FILES := \
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/include \
 	$(LOCAL_PATH)/osal/include \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
 
 LOCAL_SHARED_LIBRARIES := libion_exynos
 
 LOCAL_SHARED_LIBRARIES += liblog
 
 ifeq ($(BOARD_USE_KHRONOS_OMX_HEADER), true)
-LOCAL_C_INCLUDES += $(TOP)/hardware/samsung_slsi/openmax/include/khronos
+LOCAL_C_INCLUDES += $(TOP)/hardware/samsung_slsi-linaro/openmax/include/khronos
 else
 LOCAL_HEADER_LIBRARIES := media_plugin_headers
 endif
